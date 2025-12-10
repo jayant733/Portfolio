@@ -53,7 +53,7 @@ import LogoMySQL from "/public/images/logos/MySQL.svg"
 import LogoMyCollegeFest from "/public/images/logos/1491907982.png"
 
 
-import LogoMozillaFirefoxClub from "/public/images/logos/Firefox.svg"
+import LogoMozillaFirefoxClub from "/public/images/logos/firefox.svg"
 //new urls
 
 

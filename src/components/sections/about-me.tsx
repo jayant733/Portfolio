@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import JayantFullPose from '/public/images/jayant-full-pose.jpg';
+import JayantFullPose from '/public/images/Jayant-full-pose.jpg';
 import Tag from '@/components/data-display/tag';
 import Container from '@/components/layout/container';
 import Typography from '@/components/general/typography';
