@@ -59,9 +59,9 @@ import LogoMozillaFirefoxClub from "/public/images/logos/Firefox.svg"
 
 import ProjectOrderProcessing from  "/public/images/logos/Spring.svg"
 
-import ProjectFirefoxPortal from "/public/images/logos/Firefox.svg"
+import ProjectFirefoxPortal from "/public/images/logos/firefox.svg"
 
-import ProjectCloudWallet from  "/public/images/logos/Wallet.png"
+import ProjectCloudWallet from  "/public/images/logos/wallet.png"
 
 
 import LogoIBM from  "/public/images/logos/ibm.svg"
