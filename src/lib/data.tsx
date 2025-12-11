@@ -74,7 +74,7 @@ import LogoMeta from   "/public/images/logos/MetaLogo.png"
 
 
 import LogoOracleCloud from   "/public/images/logos/Oracle.svg"
-
+import LogoGoogleCloud2 from  "/public/images/logos/google_cloud-ar21.svg"
 
 import {
   ExperienceDetails,
@@ -123,100 +123,112 @@ export const SOCIAL_LINKS = [
   },
   
 ];
-
 export const TECHNOLOGIES: TechDetails[] = [
-
-
+  // Backend
   {
-  label: 'Javascript',
-  logo: LogoJavascript,
-  url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    label: 'Java',
+    logo: LogoJava,
+    url: 'https://www.oracle.com/java/',
+  },
+  {
+    label: 'Spring Boot',
+    logo: LogoSpringBoot,
+    url: 'https://spring.io/projects/spring-boot',
+  },
+  {
+    label: 'Hibernate / JPA',
+    logo: LogoHibernate,
+    url: 'https://hibernate.org/',
+  },
+  {
+    label: 'Node.js',
+    logo: LogoNodejs,
+    url: 'https://nodejs.org/en',
+  },
+  {
+    label: 'Express.js',
+    logo: LogoExpress,
+    darkModeLogo: LogoExpressLight,
+    url: 'https://expressjs.com/',
+  },
+  {
+    label: 'Maven',
+    logo: LogoMaven,
+    url: 'https://maven.apache.org/',
+  },
+
+  // Frontend
+  {
+    label: 'React',
+    logo: LogoReact,
+    url: 'https://react.dev/',
+  },
+  {
+    label: 'Next.js',
+    logo: LogoNextjs,
+    url: 'https://nextjs.org/',
+  },
+  {
+    label: 'Javascript',
+    logo: LogoJavascript,
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+  },
+  {
+    label: 'Typescript',
+    logo: LogoTypescript,
+    url: 'https://www.typescriptlang.org/',
+  },
+  {
+    label: 'Tailwindcss',
+    logo: LogoTailwindcss,
+    url: 'https://tailwindcss.com/',
+  },
+
+  // Database
+  {
+    label: 'PostgreSQL',
+    logo: LogoPostgreSQL,
+    url: 'https://www.postgresql.org/',
+  },
+  {
+    label: 'MongoDB',
+    logo: LogoMongoDB,
+    url: 'https://www.mongodb.com/',
+  },
+  {
+    label: 'MySQL',
+    logo: LogoMySQL,
+    url: 'https://www.mysql.com/',
+  },
+
+  // Tools/Infrastructure
+  {
+    label: 'Docker',
+    logo: LogoDocker,
+    url: 'https://www.docker.com/',
+  },
+  {
+    label: 'Postman',
+    logo: LogoPostman,
+    url: 'https://www.postman.com/',
+  },
+  {
+    label: 'Git',
+    logo: LogoGit,
+    url: 'https://git-scm.com/',
+  },
+  
+{
+  label: 'GCP',
+  logo: LogoGoogleCloud2,
+  url: 'https://cloud.google.com/',
 },
 {
-  label: 'Typescript',
-  logo: LogoTypescript,
-  url: 'https://www.typescriptlang.org/',
-},
-{
-  label: 'React',
-  logo: LogoReact,
-  url: 'https://react.dev/',
-},
-{
-  label: 'Next.js',
-  logo: LogoNextjs,
-  url: 'https://nextjs.org/',
-},
-{
-  label: 'Node.js',
-  logo: LogoNodejs,
-  url: 'https://nodejs.org/en',
-},
-{
-  label: 'Express.js',
-  logo: LogoExpress,
-  darkModeLogo: LogoExpressLight,
-  url: 'https://expressjs.com/',
-},
-{
-  label: 'PostgreSQL',
-  logo: LogoPostgreSQL,
-  url: 'https://www.postgresql.org/',
-},
-{
-  label: 'MongoDB',
-  logo: LogoMongoDB,
-  url: 'https://www.mongodb.com/',
-},
-{
-  label: 'Tailwindcss',
-  logo: LogoTailwindcss,
-  url: 'https://tailwindcss.com/',
-},
-{
-  label: 'Git',
-  logo: LogoGit,
-  url: 'https://git-scm.com/',
+  label: 'Oracle',
+  logo: LogoOracleCloud,
+  url: 'https://www.oracle.com/cloud/',
 },
 
-// --- New logos from your resumes ---
-
-{
-  label: 'Java',
-  logo: LogoJava,
-  url: 'https://www.oracle.com/java/',
-},
-{
-  label: 'Spring Boot',
-  logo: LogoSpringBoot,
-  url: 'https://spring.io/projects/spring-boot',
-},
-{
-  label: 'Hibernate / JPA',
-  logo: LogoHibernate,
-  url: 'https://hibernate.org/',
-},
-{
-  label: 'MySQL',
-  logo: LogoMySQL,
-  url: 'https://www.mysql.com/',
-}
-,
-{
-  label: 'Docker',
-  logo: LogoDocker,
-  url: 'https://www.docker.com/',
-},
-{
-  label: 'Postman',
-  logo: LogoPostman,
-  url: 'https://www.postman.com/',
-},
-{
-  label: 'Maven',
-  logo: LogoMaven,
-  url: 'https://maven.apache.org/',
-},
 
 ];
 

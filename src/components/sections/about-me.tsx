@@ -6,7 +6,7 @@ import Container from '@/components/layout/container';
 import Typography from '@/components/general/typography';
 import Link from '@/components/navigation/link';
 import { EXTERNAL_LINKS } from '@/lib/data';
-
+import DownloadCV from '../general/download-cv';
 const AboutMeSection = () => {
   return (
     <Container className="bg-gray-50" id="about">
@@ -45,7 +45,7 @@ const AboutMeSection = () => {
 
           <Typography>
             I&apos;m currently pursuing my B.Tech in Computer Science and
-            Engineering at Vellore Institute of Technology (VIT), where I
+            Engineering at Vellore Institute of Technology(VIT), Vellore, where I
             combine strong CS fundamentals with hands-on projects in RESTful
             APIs, microservices (learning), and cloud-native development on
             Oracle Cloud, Docker, and Git-based workflows.
@@ -84,16 +84,10 @@ const AboutMeSection = () => {
               GitHub
             </Link>
             , and connect with me on{' '}
-            {/* <Link
-              noCustomization
-              externalLink
-              withUnderline
-              // href={EXTERNAL_LINKS.LINKEDIN}
-            >
-              LinkedIn
-            </Link> */}
-            .
+           
+        
           </Typography>
+          
 
           <Typography>Finally, some quick bits about me.</Typography>
 

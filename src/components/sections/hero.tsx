@@ -5,7 +5,7 @@ import JayantHeadshot from '/public/images/jayant-headshot.jpg';
 import SocialIcons from '@/components/data-display/social-icons';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
-
+import DownloadCV from '../general/download-cv';
 const HeroSection = () => {
   return (
     <Container id="hero">
@@ -57,7 +57,11 @@ const HeroSection = () => {
               </Typography>
             </div>
           </div>
-          <SocialIcons />
+          <div className="flex items-center gap-4">
+  <SocialIcons />
+  <DownloadCV />
+</div>
+
         </div>
       </div>
     </Container>
