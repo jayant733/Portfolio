@@ -9,7 +9,7 @@ import Footer from '@/components/layout/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const title = 'Jayant Sharma | Full Stack Developer From Ahmedabad, India.';
+const title = 'Jayant Sharma | Full Stack Developer From Udaipur, India.';
 const description =
   'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from Udaipur, India.';
 const url = 'https://JayantSharma.dev';
