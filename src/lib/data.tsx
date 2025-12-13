@@ -326,7 +326,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'IBM Java Developer Professional Certificate',
     issuer: 'IBM',
     issuedOn: '2025',
-    link: '', // replace with your actual credential URL
+    link: 'https://www.coursera.org/account/accomplishments/specialization/K1GEGV8NXPXT', // replace with your actual credential URL
     logo: LogoIBM,
   },
   {
