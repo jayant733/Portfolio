@@ -1,4 +1,4 @@
-import { Github, Twitter, Figma } from 'lucide-react';
+import { Github, Linkedin, Globe } from 'lucide-react';
 import { StaticImageData } from 'next/image';
 import LogoJavascript from '/public/images/logos/icon-javascript.svg';
 import LogoTypescript from '/public/images/logos/icon-typescript.svg';
@@ -7,32 +7,10 @@ import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
 import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
 import LogoExpress from '/public/images/logos/icon-express.svg';
 import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
-import LogoNest from '/public/images/logos/icon-nest.svg';
-import LogoSocket from '/public/images/logos/icon-socket.svg';
-import LogoSocketLight from '/public/images/logos/icon-socket-light.svg';
 import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
 import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
 import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
-import LogoFigma from '/public/images/logos/icon-figma.svg';
-import LogoCypress from '/public/images/logos/icon-cypress.svg';
-import LogoCypressLight from '/public/images/logos/icon-cypress-light.svg';
-import LogoStorybook from '/public/images/logos/icon-storybook.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
-
-import LogoUpwork from '/public/images/logos/logo-upwork.svg';
-import LogoGreenApex from '/public/images/logos/logo-greenapex.svg';
-import LogoGreenApexLight from '/public/images/logos/logo-greenapex-light.svg';
-import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg';
-import LogoDotnpixelLight from '/public/images/logos/logo-dotnpixel-light.svg';
-
-import ProjectFiskil from '/public/images/project-fiskil.png';
-import ProjectWingie from '/public/images/project-wingie.png';
-import ProjectPepehousing from '/public/images/project-pepehousing.png';
-
-import AvatarKrisztian from '/public/images/avatar-krisztian.png';
-import AvatarEugen from '/public/images/avatar-eugen.png';
-import AvatarDummy from '/public/images/avatar-dummy.svg';
 
 import LogoJava from "/public/images/logos/Java.svg"
 
@@ -50,9 +28,6 @@ import LogoHibernate from "/public/images/logos/Hibernate.svg"
 
 import LogoMySQL from "/public/images/logos/MySQL.svg"
 
-import LogoMyCollegeFest from "/public/images/logos/1491907982.png"
-
-
 import LogoMozillaFirefoxClub from "/public/images/logos/firefox.svg"
 //new urls
 
@@ -60,8 +35,6 @@ import LogoMozillaFirefoxClub from "/public/images/logos/firefox.svg"
 import ProjectOrderProcessing from  "/public/images/logos/Spring.svg"
 
 import ProjectFirefoxPortal from "/public/images/logos/firefox.svg"
-
-import ProjectCloudWallet from  "/public/images/logos/wallet.png"
 
 
 import LogoIBM from  "/public/images/logos/ibm.svg"
@@ -80,13 +53,13 @@ import {
   ExperienceDetails,
   ProjectDetails,
   TechDetails,
-  TestimonialDetails,
 } from '@/lib/types';
 
 export const EXTERNAL_LINKS = {
   GITHUB: 'https://github.com/jayant733',
   GITHUB_REPO: 'https://github.com/jayant733',
-
+  LINKEDIN: 'https://www.linkedin.com/in/jayant-sharma-0a009328b',
+  PORTFOLIO: 'https://myportfolio-lime-three-14.vercel.app',
 };
 
 export type Certificate = {
@@ -121,7 +94,14 @@ export const SOCIAL_LINKS = [
     icon: Github,
     url: 'https://github.com/jayant733',
   },
-  
+  {
+    icon: Linkedin,
+    url: 'https://www.linkedin.com/in/jayant-sharma-0a009328b',
+  },
+  {
+    icon: Globe,
+    url: 'https://myportfolio-lime-three-14.vercel.app',
+  },
 ];
 export const TECHNOLOGIES: TechDetails[] = [
   // Backend
@@ -233,37 +213,48 @@ export const TECHNOLOGIES: TechDetails[] = [
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [
-    {
+  {
+    logo: LogoExpress,
+    darkModeLogo: LogoExpressLight,
+    logoAlt: 'Marvedge logo',
+    position: 'Full Stack Developer Intern, Marvedge',
+    companyUrl: 'https://marvedge.com/',
+    employmentType: 'Remote',
+    startDate: new Date(2026, 2),
+    currentlyWorkHere: true,
+    summary: [
+      'Built an AI-powered platform for generating interactive product demo videos, improving product showcase efficiency by 25%.',
+      'Developed scalable backend and full stack features with Node.js, Express.js, the MERN stack, and Next.js, reducing page load time by 20%.',
+      'Designed secure authentication and access control systems, improving onboarding success rate by 30%.',
+      'Integrated REST APIs, language models, FFmpeg, and real-time collaboration workflows to automate video generation and increase engagement.',
+    ],
+  },
+  {
+    logo: LogoJava,
+    logoAlt: 'Bluestock logo',
+    position: 'Software Development Engineer Intern, Bluestock Fintech',
+    companyUrl: 'https://bluestock.in/',
+    employmentType: 'Remote',
+    startDate: new Date(2026, 2),
+    currentlyWorkHere: true,
+    summary: [
+      'Developed scalable backend services for a stock analytics platform serving thousands of users.',
+      'Built and optimized REST APIs using Java and Spring Boot, improving response time by 25%.',
+      'Implemented secure authentication and authorization mechanisms, reducing unauthorized access risks by 40%.',
+      'Applied microservices and cloud deployment strategies across AWS and Azure to improve system reliability and scalability.',
+    ],
+  },
+  {
     logo: LogoMozillaFirefoxClub,
     logoAlt: 'Mozilla Firefox Club logo',
-    position: 'Panel Member, Mozilla Firefox Club',
-    startDate: new Date(2024, 7), // Jan 2024 (approx)
+    position: 'Technical Committee Member, Mozilla Firefox Club',
+    companyUrl: 'https://mfcvit.github.io/',
+    employmentType: 'VIT Vellore',
+    startDate: new Date(2024, 7),
     currentlyWorkHere: true,
     summary: [
-      'Evaluate candidates during developer selections and participate in technical interview rounds.',
-      'Coordinate technical activities and support the team in planning developer-focused events.',
-    ],
-  },
-  {
-    logo: LogoMyCollegeFest,
-    logoAlt: 'College tech fest logo',
-    position: 'Technical Volunteer, College Fest',
-    startDate: new Date(2025, 3), // Jul 2024 (approx)
-    endDate: new Date(2024, 4),   // Oct 2024 (approx)
-    summary: [
-      'Assisted backend and frontend teams with deployment and integration during live events.',
-      'Helped troubleshoot production issues under time constraints to keep event applications stable.',
-    ],
-  },
-  {
-    logo: LogoGit,
-    logoAlt: 'Open source logo',
-    position: 'Open Source Contributor',
-    startDate: new Date(2024, 3), // Apr 2024 (approx)
-    currentlyWorkHere: true,
-    summary: [
-      'Refactored components and improved API response consistency in community projects.',
-      'Added unit tests and fixed bugs reported by maintainers and users to increase reliability.',
+      'Maintained and supported the official club website used by a large student community.',
+      'Contributed to technical initiatives and helped support developer-focused activities inside the club.',
     ],
   },
 ];
@@ -272,17 +263,18 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: 'Java Order Processing System',
+    name: 'Machine Learning-Enabled Course Learning Platform',
     description:
-      'Backend service for managing orders, authentication, and structured data retrieval using Java, Spring Boot, Hibernate, and Oracle Database. Focused on robust REST APIs, schema design, and production-style logging and exception handling.',
-    url: 'https://github.com/jayant733', // replace with repo/project link
+      'Cloud backend for a course learning platform with 25+ REST APIs, token-based authentication, role-based access control, PostgreSQL-backed data modeling, and Dockerized deployment for production-style reliability.',
+    url: 'https://course-api-java.onrender.com',
+    repositoryUrl: 'https://github.com/jayant733/Course_api_java',
+    liveUrl: 'https://course-api-java.onrender.com',
     previewImage: ProjectOrderProcessing,
     technologies: [
       'Java',
       'Spring Boot',
-      'Hibernate / JPA',
+      'PostgreSQL',
       'REST APIs',
-      'Oracle 12c',
       'Docker',
       'Maven',
     ],
@@ -290,8 +282,10 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: 'Mozilla Firefox Community Portal Revamp',
     description:
-      'Collaborative redesign of the Mozilla Firefox community portal, with new modules for blogs, events, and user management built using Node.js, TypeScript, Express, React, and MongoDB, following SDLC best practices and Git-based workflows.',
-    url: 'https://github.com/MFC-VIT/MFC-Website2.0', // replace with specific repo
+      'Collaborative revamp of the Mozilla Firefox Club portal with modules for blogs, events, and user management using TypeScript, Node.js, Express, React, and MongoDB, following structured team workflows and deployment practices.',
+    url: 'https://mfcvit.github.io/',
+    repositoryUrl: 'https://github.com/MFC-VIT/MFC-Website2.0',
+    liveUrl: 'https://mfcvit.github.io/',
     previewImage: ProjectFirefoxPortal,
     technologies: [
       'TypeScript',
@@ -301,22 +295,6 @@ export const PROJECTS: ProjectDetails[] = [
       'MongoDB',
       'REST APIs',
       'Git / GitHub',
-    ],
-  },
-  {
-    name: 'CloudWallet Full Stack dApp',
-    description:
-      'Full stack wallet application on Solana Devnet with a React and TypeScript frontend, Node.js/Express backend APIs, and an on-chain Solana program for secure token transfers, emphasizing logging, error handling, and Devnet-based testing.',
-    url: 'https://github.com/jayant733/CloudWallet', // replace with specific repo
-    previewImage: ProjectCloudWallet,
-    technologies: [
-      'React',
-      'TypeScript',
-      'Node.js',
-      'Express.js',
-      'Solana Web3.js',
-      'Rust (on-chain)',
-      'Postman',
     ],
   },
 ];

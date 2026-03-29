@@ -47,18 +47,18 @@ const AboutMeSection = () => {
             I&apos;m currently pursuing my B.Tech in Computer Science and
             Engineering at Vellore Institute of Technology(VIT), Vellore, where I
             combine strong CS fundamentals with hands-on projects in RESTful
-            APIs, microservices (learning), and cloud-native development on
-            Oracle Cloud, Docker, and Git-based workflows.
+            APIs, cloud deployment, backend architecture, and production-focused
+            development using Java, Spring Boot, Node.js, and PostgreSQL.
           </Typography>
 
           <Typography>
-            Over the past few years, I&apos;ve worked on projects like a
-            Java-based Order Processing System using Spring Boot and Oracle 12c,
-            a Mozilla Firefox community portal revamp with TypeScript, Node.js,
-            Express, React, and MongoDB, and a CloudWallet dApp that uses
-            TypeScript, Node.js, React, and Solana Web3 for wallet actions and
-            on-chain interactions. These projects helped me deepen my backend
-            skills, API design, debugging, logging, and deployment practices.
+            Recently, I&apos;ve been building full stack and backend systems
+            through internships at Marvedge and Bluestock, while also working on
+            projects like a machine learning-enabled course platform with
+            Spring Boot and PostgreSQL, and the Mozilla Firefox Club portal
+            revamp using TypeScript, Node.js, Express, React, and MongoDB.
+            These experiences sharpened my API design, authentication,
+            deployment, and performance optimization skills.
           </Typography>
 
           <Typography>
@@ -83,9 +83,16 @@ const AboutMeSection = () => {
             >
               GitHub
             </Link>
-            , and connect with me on{' '}
-           
-        
+            {' '}and connect with me on{' '}
+            <Link
+              noCustomization
+              externalLink
+              withUnderline
+              href={EXTERNAL_LINKS.LINKEDIN}
+            >
+              LinkedIn
+            </Link>
+            .
           </Typography>
           
 
@@ -102,7 +109,7 @@ const AboutMeSection = () => {
             </ul>
             <ul className="flex list-inside list-disc flex-col gap-2">
               <Typography component="li">
-                Experience with React, Next.js, and cloud-native basics
+                Experience with React, Next.js, cloud deployment, and REST APIs
               </Typography>
               <Typography component="li">
                 Coding Club mentor & active community contributor

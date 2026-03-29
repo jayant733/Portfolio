@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 import { ProjectDetails as ProjectDetailsType } from '@/lib/types';
 import { mergeClasses } from '@/lib/utils';
@@ -17,9 +17,13 @@ const ProjectDetails = ({
   description,
   technologies,
   url,
+  repositoryUrl,
+  liveUrl,
   previewImage,
   layoutType = 'default',
 }: ProjectDetailsProps) => {
+  const primaryLink = liveUrl || repositoryUrl || url;
+
   return (
     <Card className="mx-auto flex w-full max-w-6xl flex-col md:flex-row">
       {/* Image */}
@@ -31,7 +35,7 @@ const ProjectDetails = ({
             : 'md:order-last md:rounded-r-xl md:border-l'
         )}
       >
-        <Link noCustomization href={url} externalLink>
+        <Link noCustomization href={primaryLink} externalLink>
           <div className="flex h-24 w-24 items-center justify-center md:h-28 md:w-28">
             <Image
               src={previewImage}
@@ -58,14 +62,28 @@ const ProjectDetails = ({
             <Tag key={index} label={technology} />
           ))}
         </div>
-        <Link
-          href={url}
-          noCustomization
-          className="self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500"
-          externalLink
-        >
-          <ExternalLink />
-        </Link>
+        <div className="flex items-center gap-3">
+          {repositoryUrl && (
+            <Link
+              href={repositoryUrl}
+              noCustomization
+              className="self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500"
+              externalLink
+            >
+              <Github />
+            </Link>
+          )}
+          {(liveUrl || url) && (
+            <Link
+              href={liveUrl || url}
+              noCustomization
+              className="self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500"
+              externalLink
+            >
+              <ExternalLink />
+            </Link>
+          )}
+        </div>
       </div>
     </Card>
   );
