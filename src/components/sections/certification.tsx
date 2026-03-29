@@ -7,12 +7,7 @@ import CertificateCard from '../layout/certification-card';
 
 const CertificationsSection = () => {
   return (
-    <Container
-      id="certifications"
-      className="
-        bg-gray-50
-      "
-    >
+    <Container id="certifications" className="section-light">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Certifications" />

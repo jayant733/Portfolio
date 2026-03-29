@@ -9,7 +9,7 @@ import { EXTERNAL_LINKS } from '@/lib/data';
 import DownloadCV from '../general/download-cv';
 const AboutMeSection = () => {
   return (
-    <Container className="bg-gray-50" id="about">
+    <Container className="section-light" id="about">
       <div className="self-center">
         <Tag label="About me" />
       </div>
