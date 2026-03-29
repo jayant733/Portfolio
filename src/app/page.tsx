@@ -3,6 +3,7 @@ import ContactSection from '@/components/sections/contact';
 import AboutMeSection from '@/components/sections/about-me';
 import SkillsSection from '@/components/sections/skills';
 import ExperienceSection from '@/components/sections/experiences';
+import LeadershipSection from '@/components/sections/leadership';
 
 import WorkSection from '@/components/sections/work';
 import CertificationsSection from '@/components/sections/certification';
@@ -14,7 +15,8 @@ export default function Home() {
       <AboutMeSection />
       <ExperienceSection />
       <SkillsSection />
-      <CertificationsSection/>
+      <CertificationsSection />
+      <LeadershipSection />
       <WorkSection />
       <ContactSection />
     </>

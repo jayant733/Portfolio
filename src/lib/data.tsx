@@ -244,6 +244,9 @@ export const EXPERIENCES: ExperienceDetails[] = [
       'Applied microservices and cloud deployment strategies across AWS and Azure to improve system reliability and scalability.',
     ],
   },
+];
+
+export const LEADERSHIP: ExperienceDetails[] = [
   {
     logo: LogoMozillaFirefoxClub,
     logoAlt: 'Mozilla Firefox Club logo',

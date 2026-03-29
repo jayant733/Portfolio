@@ -10,8 +10,7 @@ const CertificationsSection = () => {
     <Container
       id="certifications"
       className="
-        bg-slate-50
-        dark:bg-gray-50
+        bg-gray-50
       "
     >
       <div className="flex flex-col items-center gap-4">
