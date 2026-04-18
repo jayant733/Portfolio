@@ -1,6 +1,7 @@
 import Typography from '@/components/general/typography';
 import ImageWrapper from '@/components/data-display/image-wrapper';
 import Card from '@/components/layout/card';
+import Link from '@/components/navigation/link';
 import { ExperienceDetails as ExperienceDetailsProps } from '@/lib/types';
 
 const dateFormatOptions: Intl.DateTimeFormatOptions = {
@@ -13,6 +14,8 @@ const ExperienceDetails = ({
   darkModeLogo,
   logoAlt,
   position,
+  companyUrl,
+  employmentType,
   currentlyWorkHere,
   startDate,
   endDate,
@@ -42,6 +45,21 @@ const ExperienceDetails = ({
         >
           {position}
         </Typography>
+        {(employmentType || companyUrl) && (
+          <div className="flex flex-wrap items-center gap-3 text-sm text-gray-300">
+            {employmentType && <span>{employmentType}</span>}
+            {companyUrl && (
+              <Link
+                href={companyUrl}
+                externalLink
+                noCustomization
+                className="text-sm text-emerald-300 underline underline-offset-4 hover:text-emerald-200"
+              >
+                Visit website
+              </Link>
+            )}
+          </div>
+        )}
         <ul className="flex list-disc flex-col gap-2 md:gap-1">
           {summary?.map((sentence, index) => (
             <Typography component="li" key={index} className="text-gray-600 dark:text-gray-300">
