@@ -42,12 +42,12 @@ const ContactSection = () => {
   };
 
   return (
-    <Container id="contact">
+    <Container id="contact" className="bg-white dark:bg-slate-900">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Get in touch" />
         </div>
-        <Typography variant="subtitle" className="max-w-xl text-center">
+        <Typography variant="subtitle" className="max-w-xl text-center text-gray-700 dark:text-gray-200">
           What’s next? Feel free to reach out to me if you are looking for a
           developer, have a query, or simply want to connect.
         </Typography>
@@ -56,36 +56,32 @@ const ContactSection = () => {
       <div className="flex flex-col items-center gap-6 md:gap-12">
         <div className="flex flex-col items-center md:gap-4">
           <div className="flex items-center gap-4 md:gap-5">
-            <Mail className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`mailto:${email}`}> */}
-            <Typography variant="h2">{email}</Typography>
-            {/* </Link> */}
+            <Mail className="h-6 w-6 md:h-8 md:w-8 dark:text-gray-200" />
+            <Typography variant="h2" className="text-gray-900 dark:text-gray-100">{email}</Typography>
             <IconButton
               size={width && width < 768 ? 'md' : 'lg'}
               onClick={() => handleCopyClick(email, 'email')}
               showTooltip={isCopied && copiedValueType === 'email'}
               tooltipText="Copied!"
             >
-              <Copy />
+              <Copy className="dark:text-gray-200" />
             </IconButton>
           </div>
           <div className="flex items-center gap-4 md:gap-5">
-            <Phone className="h-6 w-6 md:h-8 md:w-8" />
-            {/* <Link href={`tel:${phone.replace(' ', '')}`}> */}
-            <Typography variant="h2">{phone}</Typography>
-            {/* </Link> */}
+            <Phone className="h-6 w-6 md:h-8 md:w-8 dark:text-gray-200" />
+            <Typography variant="h2" className="text-gray-900 dark:text-gray-100">{phone}</Typography>
             <IconButton
               size={width && width < 768 ? 'md' : 'lg'}
               onClick={() => handleCopyClick(phone.replace(' ', ''), 'phone')}
               showTooltip={isCopied && copiedValueType === 'phone'}
               tooltipText="Copied!"
             >
-              <Copy />
+              <Copy className="dark:text-gray-200" />
             </IconButton>
           </div>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <Typography className="text-center">
+          <Typography className="text-center text-gray-600 dark:text-gray-300">
             You may also find me on these platforms!
           </Typography>
           <SocialIcons />

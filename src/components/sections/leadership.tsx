@@ -6,12 +6,12 @@ import Container from '@/components/layout/container';
 
 const LeadershipSection = () => {
   return (
-    <Container id="leadership" className="bg-[#172033]">
+    <Container id="leadership" className="bg-white dark:bg-slate-900">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Leadership" />
         </div>
-        <Typography variant="subtitle" className="max-w-xl text-center">
+        <Typography variant="subtitle" className="max-w-xl text-center text-gray-700 dark:text-gray-200">
           Leadership roles and extracurricular activities where I contributed beyond coursework.
         </Typography>
       </div>
