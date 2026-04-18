@@ -42,7 +42,7 @@ const ContactSection = () => {
   };
 
   return (
-    <Container id="contact" className="bg-white dark:bg-slate-900">
+    <Container id="contact" className="bg-white dark:bg-slate-800">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Get in touch" />

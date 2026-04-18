@@ -74,7 +74,7 @@ export default function RootLayout({
           </Script>
         </head>
       ) : null}
-      <body className={`${inter.className} bg-gray text-gray-600 antialiased`}>
+      <body className={`${inter.className} text-gray-600 antialiased`}>
         <Providers>
           <Header />
           <main className="flex min-h-screen w-full flex-col">{children}</main>

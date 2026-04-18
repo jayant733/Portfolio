@@ -6,7 +6,7 @@ import Container from '@/components/layout/container';
 
 const LeadershipSection = () => {
   return (
-    <Container id="leadership" className="bg-white dark:bg-slate-900">
+    <Container id="leadership" className="bg-white dark:bg-slate-800">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Leadership" />

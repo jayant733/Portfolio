@@ -43,7 +43,7 @@ const AboutMeSection = () => {
             performance and reliability across the stack.
           </Typography>
 
-          <Typography>
+          <Typography className="text-gray-600 dark:text-gray-300">
             I&apos;m currently pursuing my B.Tech in Computer Science and
             Engineering at Vellore Institute of Technology(VIT), Vellore, where I
             combine strong CS fundamentals with hands-on projects in RESTful
@@ -51,7 +51,7 @@ const AboutMeSection = () => {
             development using Java, Spring Boot, Node.js, and PostgreSQL.
           </Typography>
 
-          <Typography>
+          <Typography className="text-gray-600 dark:text-gray-300">
             Recently, I&apos;ve been building full stack and backend systems
             through internships at Marvedge and Bluestock, while also working on
             projects like a machine learning-enabled course platform with
@@ -61,7 +61,7 @@ const AboutMeSection = () => {
             deployment, and performance optimization skills.
           </Typography>
 
-          <Typography>
+          <Typography className="text-gray-600 dark:text-gray-300">
             I enjoy working end to end on products: understanding requirements,
             designing APIs and data models, implementing features, writing tests,
             and iterating based on feedback. I&apos;ve also been actively
@@ -70,7 +70,7 @@ const AboutMeSection = () => {
             keeps me close to modern engineering practices.
           </Typography>
 
-          <Typography>
+          <Typography className="text-gray-600 dark:text-gray-300">
             Outside of coding, I mentor juniors through my college Coding Club,
             help with technical events, and participate in developer communities
             like the Mozilla Firefox Club. You can check out my work and what
@@ -96,28 +96,28 @@ const AboutMeSection = () => {
           </Typography>
           
 
-          <Typography>Finally, some quick bits about me.</Typography>
+          <Typography className="text-gray-900 dark:text-white">Finally, some quick bits about me.</Typography>
 
           <div className="flex flex-col gap-2 md:flex-row md:gap-6">
             <ul className="flex list-inside list-disc flex-col gap-2">
-              <Typography component="li">
+              <Typography component="li" className="text-gray-600 dark:text-gray-300">
                 B.Tech in Computer Science and Engineering @ VIT (2023–2027)
               </Typography>
-              <Typography component="li">
+              <Typography component="li" className="text-gray-600 dark:text-gray-300">
                 Backend-focused developer (Java, Spring Boot, TypeScript, Node.js)
               </Typography>
             </ul>
             <ul className="flex list-inside list-disc flex-col gap-2">
-              <Typography component="li">
+              <Typography component="li" className="text-gray-600 dark:text-gray-300">
                 Experience with React, Next.js, cloud deployment, and REST APIs
               </Typography>
-              <Typography component="li">
+              <Typography component="li" className="text-gray-600 dark:text-gray-300">
                 Coding Club mentor & active community contributor
               </Typography>
             </ul>
           </div>
 
-          <Typography>
+          <Typography className="text-gray-600 dark:text-gray-300">
             I&apos;m actively looking for impactful backend and full-stack
             internship opportunities, so feel free to reach out if you&apos;d
             like to collaborate or work together on something meaningful.

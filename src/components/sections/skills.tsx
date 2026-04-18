@@ -6,12 +6,12 @@ import Container from '@/components/layout/container';
 
 const SkillsSection = () => {
   return (
-    <Container className="bg-[#172033]">
+    <Container className="bg-white dark:bg-slate-800">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Skills" />
         </div>
-        <Typography variant="subtitle" className="max-w-xl text-center">
+        <Typography variant="subtitle" className="max-w-xl text-center text-gray-700 dark:text-gray-200">
           The skills, tools and technologies I am really good at:
         </Typography>
       </div>

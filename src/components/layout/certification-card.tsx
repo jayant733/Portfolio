@@ -20,7 +20,7 @@ const CertificateCard = ({
         border border-slate-200 bg-white/95
         px-5 py-4 shadow-[0_18px_45px_rgba(15,23,42,0.08)]
         transition-transform duration-200 hover:-translate-y-1
-        dark:border-slate-800 dark:bg-slate-900 dark:shadow-[0_18px_45px_rgba(0,0,0,0.45)]
+        dark:border-slate-700 dark:bg-slate-800 dark:shadow-none
       "
     >
       <div className="flex items-center gap-3">
