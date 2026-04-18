@@ -9,11 +9,7 @@ import { EXTERNAL_LINKS } from '@/lib/data';
 import DownloadCV from '../general/download-cv';
 const AboutMeSection = () => {
   return (
-<<<<<<< HEAD
     <Container className="bg-white dark:bg-slate-900" id="about">
-=======
-    <Container className="bg-[#172033]" id="about">
->>>>>>> 4e0c44cb34427d8082687ec58dddaad3dddd1259
       <div className="self-center">
         <Tag label="About me" />
       </div>

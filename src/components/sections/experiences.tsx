@@ -6,11 +6,7 @@ import Container from '@/components/layout/container';
 
 const ExperienceSection = () => {
   return (
-<<<<<<< HEAD
     <Container className="bg-white dark:bg-slate-900">
-=======
-    <Container className="section-dark">
->>>>>>> 4e0c44cb34427d8082687ec58dddaad3dddd1259
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Experience" />
