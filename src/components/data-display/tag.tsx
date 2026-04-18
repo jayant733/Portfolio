@@ -11,17 +11,16 @@ const Tag = React.forwardRef<HTMLDivElement, TagProps>(
   ({ label, className, ...props }: TagProps, ref) => {
     return (
       <div
-        className={mergeClasses(
-          'flex items-center justify-center rounded-xl bg-gray-200 px-5 py-1',
-          className
-        )}
-        {...props}
+      className={mergeClasses(
+        'flex items-center justify-center rounded-xl bg-gray-100 dark:bg-slate-700 px-5 py-1',
+        className
+      )}
+      {...props}
       >
-        <Typography variant="body3" className="font-medium">
-          {label}
-        </Typography>
-      </div>
-    );
+      <Typography variant="body3" className="font-medium text-gray-700 dark:text-gray-200">
+        {label}
+      </Typography>
+      </div>    );
   }
 );
 

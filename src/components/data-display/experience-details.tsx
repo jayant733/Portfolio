@@ -37,14 +37,14 @@ const ExperienceDetails = ({
       <div className="flex flex-col gap-4 max-md:order-3 md:w-2/4">
         <Typography
           variant="h3"
-          className="font-semibold text-white"
+          className="font-semibold text-gray-900 dark:text-gray-100"
           style={{ fontFamily: '"Times New Roman", Times, serif' }}
         >
           {position}
         </Typography>
         <ul className="flex list-disc flex-col gap-2 md:gap-1">
           {summary?.map((sentence, index) => (
-            <Typography component="li" key={index}>
+            <Typography component="li" key={index} className="text-gray-600 dark:text-gray-300">
               {sentence}
             </Typography>
           ))}
@@ -53,7 +53,7 @@ const ExperienceDetails = ({
 
       {/* Dates */}
       <div className="max-md:order-2 md:w-1/4 md:self-start">
-        <Typography className="text-gray-300 md:text-right">
+        <Typography className="text-gray-500 dark:text-gray-400 md:text-right">
           {new Intl.DateTimeFormat('en-US', dateFormatOptions).format(startDate)}{' '}
           -{' '}
           {currentlyWorkHere

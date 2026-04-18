@@ -6,12 +6,12 @@ import Container from '@/components/layout/container';
 
 const ExperienceSection = () => {
   return (
-    <Container className="bg-gray-50">
+    <Container className="bg-white dark:bg-slate-900">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Experience" />
         </div>
-        <Typography variant="subtitle" className="max-w-xl text-center">
+        <Typography variant="subtitle" className="max-w-xl text-center text-gray-700 dark:text-gray-200">
           Here is a quick summary of my most recent experiences:
         </Typography>
       </div>

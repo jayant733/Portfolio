@@ -9,10 +9,7 @@ const CertificationsSection = () => {
   return (
     <Container
       id="certifications"
-      className="
-        bg-slate-50
-        dark:bg-gray-50
-      "
+      className="bg-white dark:bg-slate-900"
     >
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
@@ -20,7 +17,7 @@ const CertificationsSection = () => {
         </div>
         <Typography
           variant="subtitle"
-          className="max-w-2xl text-center text-slate-700 dark:text-slate-200"
+          className="max-w-2xl text-center text-gray-700 dark:text-gray-200"
         >
           Credentials and certifications that validate my skills.
         </Typography>

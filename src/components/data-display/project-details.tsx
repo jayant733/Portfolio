@@ -25,7 +25,7 @@ const ProjectDetails = ({
       {/* Image */}
       <div
         className={mergeClasses(
-          'flex items-center justify-center border-gray-100 bg-gray-50 p-8 dark:bg-gray-200 max-md:rounded-t-xl md:w-1/2 lg:p-12',
+          'flex items-center justify-center border-gray-200 bg-white p-8 dark:border-slate-700 dark:bg-slate-900 max-md:rounded-t-xl md:w-1/2 lg:p-12',
           layoutType === 'default'
             ? 'md:rounded-l-xl md:border-r'
             : 'md:order-last md:rounded-r-xl md:border-l'
@@ -49,10 +49,10 @@ const ProjectDetails = ({
           layoutType === 'default' ? '' : 'md:order-first'
         )}
       >
-        <Typography variant="subtitle" className="font-semibold text-gray-900">
+        <Typography variant="subtitle" className="font-semibold text-gray-900 dark:text-gray-100">
           {name}
         </Typography>
-        <Typography>{description}</Typography>
+        <Typography className="text-gray-600 dark:text-gray-300">{description}</Typography>
         <div className="flex flex-wrap gap-2">
           {technologies?.map((technology, index) => (
             <Tag key={index} label={technology} />
