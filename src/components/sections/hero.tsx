@@ -26,7 +26,7 @@ const HeroSection = () => {
         {/* Content */}
         <div className="flex max-w-3xl flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12">
           <div className="flex flex-col gap-2">
-            <Typography variant="h1" className="text-gray-900 dark:text-gray-100">
+            <Typography variant="h1" className="text-gray-900 dark:text-white">
               Hi, I&apos;m Jayant{' '}
               <span className="inline-block animate-waving-hand">👋</span>
             </Typography>

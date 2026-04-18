@@ -35,7 +35,7 @@ const ProjectDetails = ({
             : 'md:order-last md:rounded-r-xl md:border-l'
         )}
       >
-        <Link noCustomization href={primaryLink} externalLink>
+        <Link noCustomization href={url} externalLink>
           <div className="flex h-24 w-24 items-center justify-center md:h-28 md:w-28">
             <Image
               src={previewImage}
@@ -53,7 +53,7 @@ const ProjectDetails = ({
           layoutType === 'default' ? '' : 'md:order-first'
         )}
       >
-        <Typography variant="subtitle" className="font-semibold text-gray-900 dark:text-gray-100">
+        <Typography variant="subtitle" className="font-semibold text-gray-900 dark:text-white">
           {name}
         </Typography>
         <Typography className="text-gray-600 dark:text-gray-300">{description}</Typography>

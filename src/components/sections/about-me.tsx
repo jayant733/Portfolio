@@ -9,7 +9,7 @@ import { EXTERNAL_LINKS } from '@/lib/data';
 import DownloadCV from '../general/download-cv';
 const AboutMeSection = () => {
   return (
-    <Container className="bg-white dark:bg-slate-900" id="about">
+    <Container className="bg-white dark:bg-slate-800" id="about">
       <div className="self-center">
         <Tag label="About me" />
       </div>
@@ -21,20 +21,20 @@ const AboutMeSection = () => {
             <Image
               src={JayantFullPose}
               alt="Full pose of Jayant"
-              className="absolute z-10 h-[360px] w-[280px] border-8 border-white dark:border-slate-900 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"
+              className="absolute z-10 h-[360px] w-[280px] border-8 border-white dark:border-slate-800 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"
               style={{ objectFit: 'cover' }}
             />
-            <div className="absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 dark:bg-slate-800 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]" />
+            <div className="absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 dark:bg-slate-700 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]" />
           </div>
         </div>
 
         {/* Content */}
         <div className="flex max-w-xl flex-col gap-6">
-          <Typography variant="h3">
+          <Typography variant="h3" className="text-gray-900 dark:text-white">
             Curious about me? Here you have it:
           </Typography>
 
-          <Typography>
+          <Typography className="text-gray-600 dark:text-gray-300">
             I&apos;m a motivated Computer Science undergraduate and backend-focused
             developer who enjoys building reliable services and full-stack
             applications using Java, Spring Boot, SQL, and TypeScript with
